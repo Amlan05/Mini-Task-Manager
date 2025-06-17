@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import TaskForm from '../components/TaskForm';
+import Taskform from '../components/Taskform';
 import TaskList from '../components/TaskList';
 import {
   getTasks,
@@ -56,7 +56,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-100 p-4">
       <main className="max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-md">
         <h1 className="mb-6 text-3xl font-bold text-center text-gray-800">Mini Task Manager</h1>
-        <TaskForm onSubmit={handleAddOrUpdate} editingTask={editingTask} />
+        <Taskform onSubmit={handleAddOrUpdate} editingTask={editingTask} />
         {loading ? (
           <p className="text-center text-gray-500">Loading tasks...</p>
         ) : (
